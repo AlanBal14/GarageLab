@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GarageLab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">GarageLab</a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#garaje">Mi garaje</a></li>
+                <li><a href="#agregar">Agregar auto</a></li>
+            </ul>
+
+            <button id="boton-tema" class="boton-tema">
+                ☀️ Modo claro
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="inicio" id="inicio">
+
+            <div class="inicio-contenido">
+
+                <h1>Tu garaje. Tus autos.</h1>
+
+                <p>
+                    Organiza, administra y personaliza tu colección de vehículos
+                    en un solo lugar.
+                </p>
+
+                <a href="#garaje" class="boton-principal">
+                    Ver mi garaje
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="garaje">
+
+            <h2>Mi garaje</h2>
+
+            <div class="estadisticas">
+
+                <div class="estadistica">
+                    <h3 id="total-autos">0</h3>
+                    <p>Autos</p>
+                </div>
+
+                <div class="estadistica">
+                    <h3 id="total-favoritos">0</h3>
+                    <p>Favoritos</p>
+                </div>
+
+                <div class="estadistica">
+                    <h3 id="total-deportivos">0</h3>
+                    <p>Deportivos</p>
+                </div>
+
+            </div>
+
+            <div class="filtros-garaje">
+
+                <input
+                    type="text"
+                    id="buscar-auto"
+                    placeholder="Buscar por marca o modelo"
+                >
+
+                <select id="filtrar-tipo">
+                    <option value="Todos">Todos los tipos</option>
+                    <option value="Deportivo">Deportivo</option>
+                    <option value="Sedán">Sedán</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Pickup">Pickup</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Otro">Otro</option>
+                </select>
+
+                <select id="ordenar-autos">
+                    <option value="normal">Ordenar por</option>
+                    <option value="marca">Marca A-Z</option>
+                    <option value="recientes">Año: más reciente</option>
+                    <option value="antiguos">Año: más antiguo</option>
+                    <option value="potencia">Mayor potencia</option>
+                </select>
+
+            </div>
+
+            <p id="mensaje-vacio">
+                Todavía no tienes autos en tu garaje.
+            </p>
+
+            <div class="contenedor-autos" id="contenedor-autos"></div>
+
+        </section>
+
+        <section id="agregar">
+
+            <h2>Agregar auto</h2>
+
+            <form id="formulario-auto">
+
+                <div class="campo">
+                    <label for="marca">Marca</label>
+                    <input
+                        type="text"
+                        id="marca"
+                        maxlength="30"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="modelo">Modelo</label>
+                    <input
+                        type="text"
+                        id="modelo"
+                        maxlength="40"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="anio">Año</label>
+                    <input
+                        type="number"
+                        id="anio"
+                        min="1886"
+                        max="2030"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="potencia">Potencia (HP)</label>
+                    <input
+                        type="number"
+                        id="potencia"
+                        min="1"
+                        max="5000"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+
+                    <label for="tipo">Tipo</label>
+
+                    <select id="tipo" required>
+                        <option value="">Selecciona un tipo</option>
+                        <option value="Deportivo">Deportivo</option>
+                        <option value="Sedán">Sedán</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Pickup">Pickup</option>
+                        <option value="Hatchback">Hatchback</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+                </div>
+
+                <div class="campo">
+                    <label for="color">Color</label>
+                    <input
+                        type="text"
+                        id="color"
+                        maxlength="25"
+                        placeholder="Ejemplo: Rojo"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="boton-agregar">
+                    Agregar auto
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
