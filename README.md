@@ -44,8 +44,9 @@ GarageLab/
 ├── script.js
 ├── README.md
 └── docs/
-    └── Documentacion_GarageLab.pdf
+    └── GarageLab_Documentacion.pdf
+```
 
-  ## 📄 Documentación
+## 📄 Documentación
 
 [Ver documentación en PDF](docs/GarageLab_Documentacion.pdf)
