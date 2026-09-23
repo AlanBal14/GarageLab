@@ -46,8 +46,6 @@ GarageLab/
 └── docs/
     └── Documentacion_GarageLab.pdf
 
-    ## 📄 Documentación
+  ## 📄 Documentación
 
-Puedes consultar la documentación completa del proyecto aquí:
-
-[Ver documentación en PDF](docs/Documentacion_GarageLab.pdf)
+[Ver documentación en PDF](docs/GarageLab_Documentacion.pdf)
