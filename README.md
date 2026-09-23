@@ -42,4 +42,12 @@ GarageLab/
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md
+├── README.md
+└── docs/
+    └── Documentacion_GarageLab.pdf
+
+    ## 📄 Documentación
+
+Puedes consultar la documentación completa del proyecto aquí:
+
+[Ver documentación en PDF](docs/Documentacion_GarageLab.pdf)
